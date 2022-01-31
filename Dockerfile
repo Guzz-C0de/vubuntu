@@ -35,8 +35,8 @@ RUN rm -f /etc/apt/sources.list && \
 #Ngrok
 	wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -P /tmp && \
 	unzip /tmp/ngrok-stable-linux-amd64.zip -d /usr/bin && \
-	ngrok authtoken $NGROK_AUTH_TOKEN && \
-	 ngrok tcp --region $CRP 3389 &>/dev/null &
+	./ngrok authtoken $NGROK_AUTH_TOKEN && \
+	 ./ngrok tcp --region eu 3389 &>/dev/null &
 	 docker pull danielguerra/ubuntu-xrdp
 clear
 echo "===================================="
