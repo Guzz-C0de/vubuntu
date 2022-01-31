@@ -1,4 +1,4 @@
-FROM vital987/vubuntu:latest
+FROM danielguerra/ubuntu-xrdp
 
 ENV 	DEBIAN_FRONTEND=noninteractive \
 #VNC Server Password
